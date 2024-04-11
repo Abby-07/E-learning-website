@@ -1,0 +1,107 @@
+.body
+{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    font-family: sans-serif;
+    background-color: #0398a2;
+}
+.input-row {
+    display: flex;
+    justify-content: space-between; /* Aligns the inputs evenly across the row */
+    margin-bottom: 10px; /* Adds space between rows */
+}
+
+.loginbox, .signupbox
+{
+    width: 310px;
+    height: 410px;
+    font-family: sans-serif;
+    background: #cef1fc;
+    color: #fff;
+    top:50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    /* box-shadow: 0 0 40px 20px rgba(224,255,255,0.26); */
+    padding: 70px 30px;
+    backface-visibility: hidden;
+}
+.signupbox
+{
+    transform: rotateY(180deg);
+}
+.user
+{
+    width: 100px;
+    height:100 px;
+    border-radius: 50%;
+    position: absolute;
+    top:-50px;
+    left: calc(50% - 50px);
+}
+.user h1
+{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color:	#0000ff;
+    border-color:antiquewhite;
+}
+.loginbox p
+{
+    margin:0;
+    padding: 0;
+    font-weight: 550;
+    color:#0000ff;
+    font-size: 17px;
+}
+.loginbox input
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.input-box
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color:#0000ff ;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:#1e90ff;
+    color:#0000ff;
+    font-weight:bold;
+    font-size: 18px;
+
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    color:#0000ff;
+    
+    
+}
+.loginbox p
+{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+   font-style: italic;
+    color:#0000ff ;
+}
+.loginbox p:hover{
+    color:	#000080;
+    
+}

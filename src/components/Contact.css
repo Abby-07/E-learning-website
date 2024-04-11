@@ -1,0 +1,124 @@
+#showcase
+{
+    border:2px solid white;
+    background-color:rgb(250, 221, 246);
+    border-radius:10px;
+    margin:20px;
+}
+a
+{
+    text-decoration:none;
+    color:Black;
+    font-family:cursive;
+    font-size:20px;
+}
+ul
+{
+    display:inline;
+    width:20px;
+    height:2px;
+}
+li
+{
+    display:inline-block;
+    float:left;
+    padding:10px;
+    text-decoration:none;
+   
+}
+li:hover
+{
+   border:2px solid black;
+   background-color:white ;
+   text-align:center;
+}
+#showcase li
+{
+    border-top-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+.contact h1{
+  padding-top: 50px;
+    text-align: left;
+    padding-left:10px;
+    font-size: 3rem;
+    font-family: 'Merienda',cursive;
+}
+    
+.get
+{
+    text-align: left;
+    padding-left:20px;
+    font-size: 15px;
+    font-family:cursive; 
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+}
+.maile
+{
+    
+    padding-left:20px;
+    font-size: 25px;
+    font-family: 'Courgette',cursive;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.mail
+{
+    text-align: left;
+    padding-left:10px;
+    font-size: 15px;
+    font-family:cursive;
+    padding: 0px;
+    margin: 0px;
+}
+/* h1{
+    display: inline;
+    padding-left: 20px;
+    margin-left: 10px;
+    font-size: 3rem;
+
+} */
+  
+  input[type="submit"] {
+    background-color:#96cfeb;
+    color: rgb(250, 221, 246);
+    border: none;
+    cursor: pointer;
+    padding-left: 10px;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+  }
+  .maaile{
+    padding-left: 10px;
+  }
+  .name
+  {
+    padding-left: 10px;
+  }
+  .messageme
+  {
+    padding-left: 10px;
+  }
+  .subbmit
+  {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }

@@ -1,0 +1,28 @@
+/* CourseManagement.css */
+.courses h1 , .courses p{
+  text-align: center;
+  color: #000000;
+  background-color: #c2e1f1;
+}
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .course {
+    width: 200px;
+    height: 100px;
+    /* background-color: #c2e1f1; */
+    border: 5px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+  }
+  
+  .course-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
