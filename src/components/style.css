@@ -1,4 +1,4 @@
-*
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 .header
 { 
     height: 40px;
@@ -17,6 +17,62 @@
     height: auto;
   }
   
+
+
+  @media screen and (min-width: 800px) {
+    /* for BIG screen write code here */
+
+    .menu-bar-btn {
+        display: none;
+      }
+      .menu-items {
+        display: flex;
+        flex-direction: row;
+      }  
+  }
+  
+  
+  @media screen and (max-width: 800px) {
+    
+  
+    /* for small screen write code here */
+
+    .menu-items {
+        display: none;
+      }
+
+      .menu-bar-btn{
+        display: flex;
+    }
+    
+  }
+
+  .menu-bar-btn {
+    cursor: pointer;
+  
+  }
+  
+/* ************** Adjusting Our Courses */
+
+@media screen and (max-width: 1020px) {
+    
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************** */
 .home{
     /* height: 100%; */
     background-size: cover;
@@ -116,7 +172,7 @@ padding: 8px 16px;
     text-align: center;
     padding-bottom: 30px;
     font-size: 40px;
-    
+    margin: 0;
     
 }
 .feature-img img
@@ -317,7 +373,7 @@ padding: 8px 16px;
     /* margin: -30px 0 20px 40%; */
     
 }
-.user-review p::before
+/* .user-review p::before
 {
     content: '\201d';
     display: block;
@@ -328,7 +384,7 @@ padding: 8px 16px;
     left: 21%;
     top:2820px;
     
-}
+} */
 .footer
 {
     padding:100px 20px 0px;
@@ -438,6 +494,11 @@ ul li {
     color: #666;
     font-size: 14px;
     text-align: center;
+    margin: 0;
+}
+.Elearning h2{
+    margin: 0;
+    background-color: #fff solid;
 }
 
 .feature-img{
@@ -459,4 +520,7 @@ footer{
 }
 .feature-details{
     background-color: #ddd;
+}
+*{
+    font-family: 'noto-sans';
 }

@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import './style.css';
 import './login.css'
 import axios from "axios";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faGraduationCap  } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate, Link } from "react-router-dom";
 import {GoogleOAuthProvider} from '@react-oauth/google'
 import user from "./images/login.jpg"
+// import back from 
 //import firebase from '../firebase'; // Import Firebase configuration
 
 function Login() {
@@ -46,8 +49,13 @@ function Login() {
 
     return (
         // header section
-        <div class="loginn">
+        
+        <div className="loginn">
           <header class="header">
+          <div className="logo">
+                <FontAwesomeIcon icon={faGraduationCap }/>
+                <span>E-gurukul</span>
+            </div>
       <div class="logo-container">
             {/* <img src={faCoffee} alt='Background' class="logo"/> */}
        </div>
@@ -73,10 +81,13 @@ function Login() {
             </form>
             <br />
             <p>OR</p>
-            {/* <br />
+             {/* <br />
             <button onClick={handleGoogleLogin} className="signup">Sign in with Google</button>
-            <br />
-            <Link to="/signup" className="signup">Sign Up</Link> */}
+            <br /> */}
+        
+            <a href="/signup" class="signupbox2">Signup</a>
+
+
         </div>
         </div>
     );

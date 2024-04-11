@@ -10,27 +10,31 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import {useLocation, useNavigate} from 'react-router-dom';
 // import 'photography-course' from './images/photography-course.png'
 import photographyCourseImage from './images/photography-course.png';
+import { useState } from "react";
 
 
+  
 
-function Home (){
-    const location=useLocation()
+function Home() {
+    const location = useLocation();
     const navigate = useNavigate();
+    const [showMenu, setShowMenu] = useState(false);
 
-  const handleLoginClick = () => {
-    navigate('/login');
-  };
 
     return (
-        <div className="homepage">
+    <div className="homepage">
 
       {/* Header Section */}
       <header class="header">
+      <div class="menu-bar-btn" id='menuBarBtn'>
+      <i class="fas fa-star"></i>
+
+      </div>
       <div className="logo">
                 <FontAwesomeIcon icon={faGraduationCap }/>
                 <span>E-gurukul</span>
             </div>
-       <div class="home-tab">
+       <div class="home-tab menu-items" id='menuItems'>
         <a href="/" class="Home-btn">Home</a>
         <a href="/About" class="About-btn">About</a>
         <a href="/Courses" class="Courses-btn">Courses</a>
@@ -220,7 +224,7 @@ function Home (){
             </div>
             </div>
         </section>
-        <hr class="divider-line"></hr>
+        {/* <hr class="divider-line"></hr> */}
         <section class="footer">
         <div class="container">
             <div class="row">
@@ -252,10 +256,13 @@ function Home (){
         </section>
           
         <span> &copy;
-                    <h2><a href="Home.js"> E-Learning</a> </h2> 
+                    <div class="Elearning"> <h2><a href="./"> E-Learning</a> </h2>
+                    </div>
                     </span>
+                    
 
-  </div>
+    </div>
+    <script src='./trying.js'> </script>
   </div>
     )
 }

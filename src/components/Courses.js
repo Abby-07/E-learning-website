@@ -2,12 +2,18 @@
 
 import React, { useEffect, useState } from 'react';
 import { useNavigate, Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faGraduationCap  } from '@fortawesome/free-solid-svg-icons';
 import './Courses.css'; // Import CSS file for styling
 
 function CourseManagement() {
   return (
     <div class="courses">
     <header class="header">
+    <div className="logo">
+                <FontAwesomeIcon icon={faGraduationCap }/>
+                <span>E-gurukul</span>
+            </div>
       <div class="logo-container">
             {/* <img src={faCoffee} alt='Background' class="logo"/> */}
        </div>

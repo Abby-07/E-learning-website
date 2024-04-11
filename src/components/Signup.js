@@ -4,6 +4,8 @@ import './login.css'
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import user from "./images/login.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faGraduationCap  } from '@fortawesome/free-solid-svg-icons';
 //import firebase from '../firebase'; // Import Firebase configuration
 
 function Signup() {
@@ -20,7 +22,7 @@ function Signup() {
 
         try {
             // Perform signup with email and password using your existing logic
-            await axios.post("http://localhost:8000/signup", { email, password })
+            await axios.post("http://localhost:8000/signup", { email, password})
                 .then(res => {
                     if (res.data === "exist") {
                         alert("User already exists");
@@ -50,6 +52,11 @@ function Signup() {
     return (
         <div className="signup">
         <header class="header">
+        <div className="logo">
+                <FontAwesomeIcon icon={faGraduationCap }/>
+                <span>E-gurukul</span>
+            </div>
+       <div class="home-tab"></div>
       <div class="logo-container">
             {/* <img src={faCoffee} alt='Background' class="logo"/> */}
        </div>
@@ -85,6 +92,7 @@ function Signup() {
     </form>
             <br />
             <p>OR</p>
+            <a href="/signup" class="signupbox2">Signup</a>
             {/* <br />
             <button onClick={handleGoogleSignup} className="signup">Sign up with Google</button>
             <br />

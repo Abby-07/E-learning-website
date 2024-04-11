@@ -1,8 +1,12 @@
 /* CourseManagement.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 .courses h1 , .courses p{
   text-align: center;
   color: #000000;
-  background-color: #c2e1f1;
+  /* background-color: #c2e1f1; */
+
 }
 .course-list {
     display: flex;
@@ -26,3 +30,6 @@
     font-size: 18px;
     font-weight: bold;
   }
+  *{
+    font-family: 'noto-sans';
+}

@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import "./Contact.css"
 import { useNavigate, Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faGraduationCap  } from '@fortawesome/free-solid-svg-icons';
+
+
 import './Contact.css'
 
 function Contact()
@@ -7,6 +12,10 @@ function Contact()
     return (
         <div>
         <header class="header">
+        <div className="logo">
+                <FontAwesomeIcon icon={faGraduationCap }/>
+                <span>E-gurukul</span>
+            </div>
           <div class="logo-container">
                 {/* <img src={faCoffee} alt='Background' class="logo"/> */}
            </div>
