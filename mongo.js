@@ -1,6 +1,7 @@
 const mongoose=require("mongoose")
-// mongoose.connect("mongodb+srv://abhavyabajaj:86CqUYra6ICzHzpd@cluster0.sbzj6hb.mongodb.net/")
-mongoose.connect("mongodb+srv://abhavyabajaj:nVmNBmQuqcatN9ve@abhavya.s3ruuy0.mongodb.net/")
+// mongoose.connect("mongodb+srv://abhavyabajaj:Abhavya@07@cluster0.sbzj6hb.mongodb.net/")
+mongoose.connect("mongodb+srv://abhavyabajaj:xj16d5qmw7wBFLLJ@abhavya.vi9fq7p.mongodb.net/")
+// mongoose.connect("mongodb+srv://abhavyabajaj:nVmNBmQuqcatN9ve@abhavya.s3ruuy0.mongodb.net/")
 // mongodb+srv://abhavyabajajece22:<password>@abhavya.opyhuyx.mongodb.net/
 .then(()=>{
     console.log("mongodb connected");
